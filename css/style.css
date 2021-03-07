@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(245, 206, 191);
+    /* overflow: hidden; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* For typing effect */
+#typed-string{
+    display: none;
+}
+
+#typed{
+    color: #06fb06;
+    font-size: 2rem;
+    position: absolute;
+    top: 36vh;
+    left: 65vh;
+    height: 200px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 1.3px;
+}
+
+#typed::after{
+    content: '|';
+    display: inline;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/* For Navbar  */
+
+#navbar {
+    background-color: black;
+    display: flex;
+    font-family: 'Akaya Kanadaka', cursive;
+    height: 13vh;
+    align-items: center;
+
+}
+
+li img {
+    height: 50px;
+    width: 50px;
+}
+
+#ul {
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+#ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+#ul li a {
+    padding: 22px;
+    color: #06fb06;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+#ul li a:hover {
+    color: rgb(88, 245, 88);
+    /* background-color: rgb(12, 12, 12); */
+    text-decoration: underline;
+}
+
+/* For log in buttons and search section */
+#buttons{
+    display: flex;
+    right: 1vh;
+    align-items: center;
+    position: absolute;
+    top: 3vh;
+}
+
+.btn{
+    font-size: 17px;
+    height: 33px;
+    width: 105px;
+    margin: 5px;
+    border: none;
+    border-radius: 18px;
+    outline: none;
+    cursor: pointer;
+    background-color: #32CD32;
+    color: rgb(255 255 255);
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: #41e920;
+    
+}
+
+#search{
+    font-size: 17px;
+    font-weight: bold;
+    height: 26px;
+    margin-left: 5px;
+    border-radius: 30px;
+    text-align: center;
+    outline: none;
+    border: 2px solid lime;
+    color: #ffffff;
+    background: transparent;
+    width: 130px;
+}
+
+
+/* About section */
+
+.image {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 21vh;
+    border: 2px solid #20ff00;
+    border-radius: 100%;
+}
+
+.image img {
+    height: 150px;
+    width: 150px;
+}
+
+#about {
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#about::before {
+    content: "";
+    position: absolute;
+    background-color: #211d1c;
+    height: 120vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#para {
+    font-size: 2rem;
+    margin: 0px 36px;
+    position: absolute;
+    top: 60vh;
+    font-family: 'Akaya Kanadaka', cursive;
+    color: #b0ffb0;
+}
+
+#span {
+    text-align: center;
+    margin: 0px 72px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+}
+
+/* Courses section */
+#courses-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+
+}
+
+#courses-section::before {
+    content: "";
+    position: absolute;
+    background: url("../images/bg-courses.jpg") no-repeat center center/cover;
+    height: 80vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.courses {
+    height: 250px;
+    width: 250px;
+    border: 2px solid grey;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #ffbba2;
+}
+
+.courses img{
+    height: 100px;
+    margin-top: 3vh;
+    width: 100px;
+
+}
+
+/* courses heading */
+
+#heading {
+    color: black;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 1.3px;
+    margin-top: 5vh;
+}
+
+#courses-btn{
+    font-size: 17px;
+    height: 35px;
+    width: 150px;
+    margin: 15px 0px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    background-color: #000000;
+    color: rgb(255 255 255);
+    font-weight: bold;
+}
+
+
+#courses-btn:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    transition: all .5s ease-in-out 0s;
+}
+
+
+
+/* contact form  */
+
+.form {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.form input {
+    display: flex;
+    margin: 19px;
+    width: 93vh;
+    height: 4vh;
+    outline: none;
+    border: 2px solid rgb(17, 77, 17);
+    font-family: 'Baloo Bhai 2', cursive;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#submit{
+    width: 30vh;
+    height: 5vh;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: all .5s ease-in-out 0s;
+}
+
+#submit:hover{
+    background-color: black;
+    color: white;
+}
+
+#textarea {
+    background-color: #e8d0cf;
+    text-align: center;
+    width: 95vh;
+    font-family: 'Baloo Bhai 2', cursive;
+    margin-left: 3vh;
+    border: 2px solid rgb(13, 99, 13);
+    border-radius: 14px;
+    outline: none;
+}
+
+#heading-contact {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 15vh;
+}
+
+
+/* footer section  */
+#footer{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(31, 23, 23);
+}
+#footer p{
+    color: white;
+}
+
